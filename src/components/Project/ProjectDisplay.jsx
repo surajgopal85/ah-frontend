@@ -30,7 +30,6 @@ const ProjectDisplay = () => {
             <div className="border-b-2 border-slate-300 text-2xl mt-2 mx-2">Notes: {project.notes}</div>
             <div className="border-b-2 border-slate-300 text-2xl mt-2 mx-2">Budget: ${project.budget}</div>
             <div className="border-b-2 border-slate-300 text-2xl mt-2 mx-2">Address: {project.address}</div>
-            <div className="border-b-2 border-slate-300 text-2xl mt-2 mx-2">Address: {project.address}</div>
           </div>
         </div>
       </div>
