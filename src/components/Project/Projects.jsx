@@ -4,10 +4,12 @@ import React from 'react';
 import { ProjectList } from '../helpers/ProjectList';
 import ProjectItem from './ProjectItem';
 import Header from '../UI/Header';
+import Navbar from '../UI/Navbar';
 
 function Projects() {
   return (
     <div>
+      <Navbar />
       <Header />
       <div className='container mx-auto grid gap-4 grid-cols-3 grid-rows-3'>
         {ProjectList.map((item, index) => (

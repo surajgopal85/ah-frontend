@@ -11,17 +11,15 @@ const ProjectItem = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="border-2 border-solid border-slate-500 rounded-md shadow-lg text-slate-700">
+    <div className="border-2 border-solid border-slate-500 rounded-md shadow-lg text-slate-700 hover:translate-y-1 hover:translate-x-1 cursor-pointer"
+      onClick={() => navigate("/project/" + props.id)}>
       <div className="flex flex-row m-2 mr-0">
         <div className="m-2">
           <img src={props.image} alt={props.address} />
         </div>
         <div className="grid grid-cols-3 items-center  align-middle w-full mr-2">
           <div className="w-full m-2 justify-left col-span-3">
-            <h1
-              onClick={() => navigate("/project/" + props.id)}
-              className="font-merriweather text-blue-500 underline text-center text-base cursor-pointer"
-            >
+            <h1 className="font-merriweather text-center text-base ">
               {props.address}
             </h1>
           </div>
