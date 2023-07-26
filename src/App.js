@@ -2,12 +2,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // components
-import Navbar from './components/UI/Navbar';
-import Header from './components/UI/Header';
-import Home from './components/pages/Home';
+
 import About from './components/pages/About';
 import Projects from './components/Project/Projects';
 import ProjectDisplay from './components/Project/ProjectDisplay';
+import ProductLibrary from './components/Product/ProductLibrary';
 
 // styles
 import './App.css';
@@ -16,10 +15,11 @@ const App =  () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Home />}/>
+        <Route path='/' element={<Projects />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/projects' element={<Projects />}/>
         <Route path='/project/:id' element={<ProjectDisplay />} />
+        <Route path='/productlibrary' element={<ProductLibrary />} />
       </Routes>
     </div>
 
